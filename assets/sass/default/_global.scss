@@ -1,7 +1,22 @@
-a,.heading,figcaption { @include textTransform($transform: capitalize); }
-.birchbox,.button { @include textTransform($transform: uppercase); }
-.heading,p,a,h1,h2,h3,h4,h5 { color: map-get($map: $colors, $key: fontColorGrey); }
-.header-section,.footer-section { background-color: map-get($map: $colors, $key: backgroundColor); }
+a,.heading,
+figcaption { @include textTransform($transform: capitalize); }
+
+.birchbox,
+.button { @include textTransform($transform: uppercase); }
+
+.heading,p,a
+,h1,h2,h3
+,h4,h5,span,
+figcaption { color: map-get($map: $colors, $key: fontColorGrey); }
+
+.header-section,
+.footer-section { background-color: map-get($map: $colors, $key: backgroundColor); }
+
+a{  text-decoration: none; }
+
+.wrapper{ margin: 0 auto; }
+
+li { list-style-type: none; }
 
 .button { 
     border: 1px solid map-get($map: $colors, $key: fontColorGrey); 
