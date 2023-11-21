@@ -6,6 +6,10 @@
     flex-direction: $direction;
 }
 
+@mixin textTransform($transform) {
+    text-transform: $transform;
+}
+
 @mixin basis($flexBasis) {
    flex-basis: $flexBasis;
 }
