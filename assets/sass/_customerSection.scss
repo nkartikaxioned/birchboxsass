@@ -1,0 +1,12 @@
+.customer-review {
+
+    .wrapper { 
+        text-align: center; 
+        border-bottom: 2px solid map-get($map: $colors, $key: lineColor);
+    }
+
+    .review-container {
+        @include flex();
+    }
+
+}

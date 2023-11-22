@@ -15,9 +15,6 @@
      }
 
     .button--learn-more {
-        padding: 20px 80px;
-        transition: .3s;
-
 
         &:hover {
             background-color: map-get($map: $colors, $key: fontColorGrey);

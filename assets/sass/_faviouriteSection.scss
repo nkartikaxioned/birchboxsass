@@ -7,7 +7,6 @@
 
     &__list {
         margin: 40px 0 60px;
-        @include flex();
   
         li { width: 30%; }
 
@@ -17,9 +16,6 @@
     }
 
     .button--browse {
-        padding: 20px 80px;
-        transition: .3s;
-
 
         &:hover {
             background-color: map-get($map: $colors, $key: fontColorGrey);
