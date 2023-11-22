@@ -499,4 +499,23 @@ li {
   height: auto;
   object-fit: cover; }
 
+.featured-section {
+  padding-top: 50px; }
+  .featured-section .wrapper {
+    text-align: center;
+    border-bottom: 2px solid #F0F0B7; }
+  .featured-section__list {
+    margin: 50px 0 50px;
+    display: flex; }
+    .featured-section__list li:not(:first-child) {
+      margin-left: 4%; }
+  .featured-section .button--learn-more {
+    padding: 20px 80px;
+    transition: .3s; }
+    .featured-section .button--learn-more:hover {
+      background-color: #534B48;
+      color: #fff; }
+  .featured-section .box-featured-btn-container {
+    margin-bottom: 80px; }
+
 /*# sourceMappingURL=style.css.map */
