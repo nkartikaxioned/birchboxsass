@@ -17,15 +17,118 @@
             @include basis($flexBasis: 50%); 
         }
         ul { 
-            li:last-child { margin-left: 25px; }
-            a { padding: 5px; }
 
+            li:last-child { margin-left: 25px; }
+
+            a { 
+                padding: 5px;
+                transition: .3s;
+            }
+            
+            a:hover { color: map-get($map: $colors, $key: buttonColor); }
+             
             @include justify($justify: end);
             @include basis($flexBasis: 50%); 
         }
      }
 
+     &__top-header::after {
+        content: "";
+        width: 0;
+        height: 1px;
+        margin: auto;
+        display: block;
+        align-items: center;
+        background: map-get($map: $colors, $key: borderColorGrey);
+        @include position($position:absolute, $top:null, $left:0);
+     }
+
+     &__top-header::after {
+        width: 100%;
+        margin-top: 28px;
+        margin-bottom: 20px;
+     }
+
      &__main-header {
-        margin: 20px 0;
+        margin: 12px 0;
+     }
+
+     .nav-list,.nav-list li:last-child,.birchbox a {
+        @include flex();
+        @include align($align: center);
+     }
+
+     .nav-list li a { 
+         padding: 10px 25px;
+        transition: .3s;
+        @include fontSize($size :18px, $weight:300); 
+    }
+
+     .nav-list li:first-child a::after {
+        content: "\f078";
+        margin-left: 5px;
+        font-family: "fontAwesome"; 
+        @include fontSize($size :16px);
+     } 
+     
+     nav { 
+        @include basis($flexBasis:77%) ;
+
+        .nav-list li:last-child{
+            margin-left: 7%;
+        }
+    }
+
+     .birchbox { @include basis($flexBasis:22%) }
+     .birchbox a:hover,.nav-list li a:hover{ color: map-get($map: $colors, $key: buttonColor); }
+     .birchbox a {
+        transition: .3s;
+        @include fontSize($size :32px);
+
+        &::after {
+            content: "\f219";
+            font-family: "fontAwesome"; 
+            @include fontSize($size :12px);
+        }
+    }
+
+     .search-box {
+         padding: 8px;
+         border: 1px solid map-get($map: $colors, $key: borderColorGrey);
+         border-radius: 45px;
+        background: map-get($map: $colors, $key: whiteColor);
+        @include flex();
+          
+        span { 
+            cursor: pointer;
+            @include fontSize($size:0) 
+        }
+
+    span::after {
+        content: "\f002";
+        margin-right: 10px;
+        font-family: "fontAwesome";
+        @include fontSize($size :20px);
+    }
+
+        @at-root {
+           
+        input {
+            border: 0;
+            margin-left: 10px;
+            outline: 0;
+            @include fontSize($size :16px);
+        }
+
+        .nav-list li:last-child::after {
+            content: "\f07a";
+            margin-left: 10px;
+            font-family: "fontAwesome";
+            color: map-get($map: $colors, $key: fontColorGrey);
+            @include fontSize($size :20px);
+        }
+
+        }
+
      }
 }

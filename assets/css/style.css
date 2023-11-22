@@ -240,15 +240,15 @@ a, .heading,
 figcaption {
   text-transform: capitalize; }
 
-.birchbox,
-.button {
-  text-transform: uppercase; }
-
 .heading, p, a
 , h1, h2, h3
 , h4, h5, span,
 figcaption {
   color: #534B48; }
+
+.birchbox a,
+.button {
+  text-transform: uppercase; }
 
 .header-section,
 .footer-section {
@@ -284,8 +284,79 @@ li {
     .header-section__top-header ul li:last-child {
       margin-left: 25px; }
     .header-section__top-header ul a {
-      padding: 5px; }
+      padding: 5px;
+      transition: .3s; }
+    .header-section__top-header ul a:hover {
+      color: #F8A885; }
+.header-section__top-header::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  margin: auto;
+  display: block;
+  align-items: center;
+  background: #d1c7c4;
+  position: absolute;
+  left: 0; }
+.header-section__top-header::after {
+  width: 100%;
+  margin-top: 28px;
+  margin-bottom: 20px; }
 .header-section__main-header {
-  margin: 20px 0; }
+  margin: 12px 0; }
+.header-section .nav-list, .header-section .nav-list li:last-child, .header-section .birchbox a {
+  display: flex;
+  align-items: center; }
+.header-section .nav-list li a {
+  padding: 10px 25px;
+  transition: .3s;
+  font-size: 18px;
+  font-weight: 300; }
+.header-section .nav-list li:first-child a::after {
+  content: "\f078";
+  margin-left: 5px;
+  font-family: "fontAwesome";
+  font-size: 16px; }
+.header-section nav {
+  flex-basis: 77%; }
+  .header-section nav .nav-list li:last-child {
+    margin-left: 7%; }
+.header-section .birchbox {
+  flex-basis: 22%; }
+.header-section .birchbox a:hover, .header-section .nav-list li a:hover {
+  color: #F8A885; }
+.header-section .birchbox a {
+  transition: .3s;
+  font-size: 32px; }
+  .header-section .birchbox a::after {
+    content: "\f219";
+    font-family: "fontAwesome";
+    font-size: 12px; }
+.header-section .search-box {
+  padding: 8px;
+  border: 1px solid #d1c7c4;
+  border-radius: 45px;
+  background: #fff;
+  display: flex; }
+  .header-section .search-box span {
+    cursor: pointer;
+    font-size: 0; }
+  .header-section .search-box span::after {
+    content: "\f002";
+    margin-right: 10px;
+    font-family: "fontAwesome";
+    font-size: 20px; }
+  input {
+    border: 0;
+    margin-left: 10px;
+    outline: 0;
+    font-size: 16px; }
+
+  .nav-list li:last-child::after {
+    content: "\f07a";
+    margin-left: 10px;
+    font-family: "fontAwesome";
+    color: #534B48;
+    font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */
