@@ -1,0 +1,149 @@
+.footer-section {
+
+    &__top-footer,.app {
+        @include flex();
+        .top-footer-list {
+            @include flex();
+            @include basis($flexBasis:60%);
+        }
+    }
+
+    &__bottom-footer::before {
+        content: "";
+        width: 0;
+        height: 1px;
+        margin: auto;
+        display: block;
+        position: absolute;
+        top: 0;
+        align-items: center;
+        background: map-get($map: $colors, $key: borderColorGrey);
+        @include position($position:absolute, $top:null, $left:0);
+    }
+
+    &__bottom-footer::before { 
+        width: 100%; 
+       
+    }
+
+    &__bottom-footer {
+        padding:  40px 0;
+        position: relative;
+        @include flex(); 
+
+        ul {  
+            @include flex(); 
+            @include basis($flexBasis:40%);
+        }
+        .bottom-first { 
+            @include basis($flexBasis:60%); 
+
+            li:not(:first-child) { margin-left: 40px; }
+            a:first-child { padding-left: 0; }
+        }
+
+        .bottom-last {
+            li { margin-right: 30px; }
+        }
+
+        a { padding: 15px }
+
+        .icon { @include fontSize($size :0px); 
+        transition: .3s;}
+
+        .icon::after {
+            font-family: "fontAwesome";
+            @include fontSize($size: 25px); 
+        }
+        .facebook::after {content: map-get($map: $iconContent, $key: facebook);}
+        .twitter::after {content: map-get($map: $iconContent, $key: twitter);}
+        .pininterest::after {content: map-get($map: $iconContent, $key: pinterest);}
+        .youtube::after {content: map-get($map: $iconContent, $key: youtube);}
+        .instagram::after {content: map-get($map: $iconContent, $key: instagram);}
+    }
+
+    .birchbox a { 
+        @include flex(); 
+        @include align($align:center);
+     }
+
+    .birchbox a:hover, a:hover{ color: map-get($map: $colors, $key: buttonColor); }
+
+    .birchbox a {
+       transition: .3s;
+       @include fontSize($size :32px);
+
+       &::after {
+           content: "\f219";
+           font-family: "fontAwesome"; 
+           @include fontSize($size :12px);
+       }
+   }
+
+   h4 { padding: 40px 0 25px; }
+
+   .subscribe-container { 
+    margin: 15px 0 30px;
+    @include flex(); 
+
+    input { 
+        padding-left: 10px;
+        margin-left: 0; 
+        line-height: 3;
+        @include basis($flexBasis:65%);
+        @include fontSize($size :15px);
+    }
+    }
+
+   .button--yes {
+    padding: 15px;
+    background-color: map-get($map: $colors, $key: fontColorGrey);
+    color: map-get($map: $colors, $key: whiteColor);
+
+    &:hover {
+        border-color: map-get($map: $colors, $key: fontColorGrey);
+     background-color: transparent;
+     color: map-get($map: $colors, $key: fontColorGrey);
+    }
+   }
+   
+   .list-one { @include basis($flexBasis:50%); }
+   .list-one li a,.list-two li a, span, .head, li a,.head-form { @include fontSize($weight :600); }
+
+   .list-one li,.list-two li {
+     margin-bottom: 30px;
+   }
+
+   .head,.head-form { text-transform: uppercase; }
+
+   span{
+    &::before {
+        content: "\f2b4";
+        margin-right: 8px;
+        font-family: "fontAwesome";
+       }
+   }
+
+   p { @include fontSize($size :15px); }
+   .head-form { margin: 40px 0 15px; }
+
+   .app li:first-child { 
+    @include basis($flexBasis:30%);
+    &::before {
+        content: map-get($map: $iconContent, $key: apple);
+    }
+
+    
+}
+
+.app li:last-child::before {
+    content: map-get($map: $iconContent, $key: android);
+}
+
+   .app li::before {
+       margin-right: 10px;
+    font-family: "fontAwesome";
+    color: map-get($map: $colors, $key: fontColorGrey);
+    @include fontSize($size :25px);
+   }
+}

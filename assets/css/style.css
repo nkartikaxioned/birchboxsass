@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------
   [Table of contents]
   * To keep an overview of structure of your code, we make use of table of 
@@ -508,8 +509,7 @@ li {
     margin-bottom: 80px; }
 
 .customer-review .wrapper {
-  text-align: center;
-  border-bottom: 2px solid #F0F0B7; }
+  text-align: center; }
 .customer-review .review-container {
   display: flex; }
 .customer-review__list {
@@ -538,5 +538,118 @@ li {
   .customer-review .button--customer-review:hover {
     background-color: transparent;
     color: #F8A885; }
+.customer-review .heading--customer-review {
+  margin: 50px 0; }
+
+.footer-section__top-footer, .footer-section .app {
+  display: flex; }
+  .footer-section__top-footer .top-footer-list, .footer-section .app .top-footer-list {
+    display: flex;
+    flex-basis: 60%; }
+.footer-section__bottom-footer::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  background: #d1c7c4;
+  position: absolute;
+  left: 0; }
+.footer-section__bottom-footer::before {
+  width: 100%; }
+.footer-section__bottom-footer {
+  padding: 40px 0;
+  position: relative;
+  display: flex; }
+  .footer-section__bottom-footer ul {
+    display: flex;
+    flex-basis: 40%; }
+  .footer-section__bottom-footer .bottom-first {
+    flex-basis: 60%; }
+    .footer-section__bottom-footer .bottom-first li:not(:first-child) {
+      margin-left: 40px; }
+    .footer-section__bottom-footer .bottom-first a:first-child {
+      padding-left: 0; }
+  .footer-section__bottom-footer .bottom-last li {
+    margin-right: 30px; }
+  .footer-section__bottom-footer a {
+    padding: 15px; }
+  .footer-section__bottom-footer .icon {
+    font-size: 0px;
+    transition: .3s; }
+  .footer-section__bottom-footer .icon::after {
+    font-family: "fontAwesome";
+    font-size: 25px; }
+  .footer-section__bottom-footer .facebook::after {
+    content: ""; }
+  .footer-section__bottom-footer .twitter::after {
+    content: ""; }
+  .footer-section__bottom-footer .pininterest::after {
+    content: ""; }
+  .footer-section__bottom-footer .youtube::after {
+    content: ""; }
+  .footer-section__bottom-footer .instagram::after {
+    content: ""; }
+.footer-section .birchbox a {
+  display: flex;
+  align-items: center; }
+.footer-section .birchbox a:hover, .footer-section a:hover {
+  color: #F8A885; }
+.footer-section .birchbox a {
+  transition: .3s;
+  font-size: 32px; }
+  .footer-section .birchbox a::after {
+    content: "\f219";
+    font-family: "fontAwesome";
+    font-size: 12px; }
+.footer-section h4 {
+  padding: 40px 0 25px; }
+.footer-section .subscribe-container {
+  margin: 15px 0 30px;
+  display: flex; }
+  .footer-section .subscribe-container input {
+    padding-left: 10px;
+    margin-left: 0;
+    line-height: 3;
+    flex-basis: 65%;
+    font-size: 15px; }
+.footer-section .button--yes {
+  padding: 15px;
+  background-color: #534B48;
+  color: #fff; }
+  .footer-section .button--yes:hover {
+    border-color: #534B48;
+    background-color: transparent;
+    color: #534B48; }
+.footer-section .list-one {
+  flex-basis: 50%; }
+.footer-section .list-one li a, .footer-section .list-two li a, .footer-section span, .footer-section .head, .footer-section li a, .footer-section .head-form {
+  font-weight: 600; }
+.footer-section .list-one li, .footer-section .list-two li {
+  margin-bottom: 30px; }
+.footer-section .head, .footer-section .head-form {
+  text-transform: uppercase; }
+.footer-section span::before {
+  content: "\f2b4";
+  margin-right: 8px;
+  font-family: "fontAwesome"; }
+.footer-section p {
+  font-size: 15px; }
+.footer-section .head-form {
+  margin: 40px 0 15px; }
+.footer-section .app li:first-child {
+  flex-basis: 30%; }
+  .footer-section .app li:first-child::before {
+    content: ""; }
+.footer-section .app li:last-child::before {
+  content: ""; }
+.footer-section .app li::before {
+  margin-right: 10px;
+  font-family: "fontAwesome";
+  color: #534B48;
+  font-size: 25px; }
 
 /*# sourceMappingURL=style.css.map */

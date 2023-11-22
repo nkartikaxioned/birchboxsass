@@ -1,9 +1,6 @@
 .customer-review {
 
-    .wrapper { 
-        text-align: center; 
-        border-bottom: 2px solid map-get($map: $colors, $key: lineColor);
-    }
+    .wrapper { text-align: center; }
 
     .review-container {
         @include flex();
@@ -49,4 +46,6 @@
             color: map-get($map: $colors, $key: buttonColor);
         }
     }
+
+    .heading--customer-review { margin: 50px 0; }
 }
