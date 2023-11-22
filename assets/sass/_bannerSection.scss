@@ -1,0 +1,58 @@
+.banner-section {
+    padding: 100px 0 40px;
+    background-color: map-get($map: $colors, $key: bannerBackground);
+   @include position($position:relative);
+
+  
+    .wrapper {
+        width: 100%;
+        text-align: center;
+    }
+
+    p:first-child { 
+        padding: 15px 0; 
+        color: map-get($map: $colors, $key: shopColor);
+        @include fontSize($size :16px, $weight:600);
+
+        &::after {
+            content: "\f054";
+        margin-left: 5px;
+        font-family: "fontAwesome";
+        }
+    }
+
+    figure,img {
+        height: 100%;
+        width: 100%;
+    }
+
+    img { object-fit: cover; }
+   
+    .heading--banner {
+       margin: 45px 0 10px;
+    }
+
+    p:not(:first-child) {
+        width: 56%;
+    margin: 0 auto;
+    }
+
+    &__btn-container {
+        margin-top: 45px;
+        @include justify($justify:center);
+        @include flex();
+
+        div:last-child {
+            margin-left: 35px;
+        }
+    }
+
+    .button-banner a {
+
+        padding: 20px 45px;
+        background-color: map-get($map: $colors, $key: buttonColor);
+        @include textTransform($transform :uppercase);
+        @include fontSize($size :16px);
+        @include fontSize($weight: 600);
+    }
+}

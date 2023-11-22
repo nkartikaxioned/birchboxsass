@@ -1,10 +1,17 @@
 a,.heading,
 figcaption { @include textTransform($transform: capitalize); }
-
+.wrapper { 
+    width: 72%; 
+    margin: 0 auto;
+}
 .heading,p,a
 ,h1,h2,h3
 ,h4,h5,span,
 figcaption { color: map-get($map: $colors, $key: fontColorGrey); }
+
+.heading,p { @include fontSize($weight: 600); }
+p { font-size: 18px; }
+.heading { font-size: 32px; }
 
 .birchbox a,
 .button { @include textTransform($transform: uppercase); }

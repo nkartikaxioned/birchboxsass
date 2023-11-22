@@ -1,5 +1,7 @@
 .header-section {
-    
+    width: 100%;
+    z-index: 1;
+    @include position($position:fixed);
     .wrapper { 
         width: 72%; 
         @include flex();
