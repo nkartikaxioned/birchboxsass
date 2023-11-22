@@ -410,9 +410,37 @@ li {
       margin-left: 35px; }
   .banner-section .button-banner a {
     padding: 20px 45px;
+    border: 1px solid #F8A885;
     background-color: #F8A885;
+    transition: .3s;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600; }
+    .banner-section .button-banner a:hover {
+      border: 1px solid #F8A885;
+      background-color: transparent;
+      color: #F8A885; }
+
+.box-section {
+  padding: 90px 0 50px; }
+  .box-section .wrapper {
+    text-align: center;
+    border-bottom: 2px solid #F0F0B7; }
+  .box-section__list {
+    display: flex; }
+    .box-section__list li:not(:first-child) {
+      margin-left: 17px; }
+  .box-section p {
+    margin: 40px 0 15px; }
+  .box-section figcaption {
+    margin-top: 10px; }
+  .box-section .button--learnmore {
+    padding: 20px 80px;
+    transition: .3s; }
+    .box-section .button--learnmore:hover {
+      background-color: #534B48;
+      color: #fff; }
+  .box-section__box-btn-container {
+    margin: 70px 0; }
 
 /*# sourceMappingURL=style.css.map */

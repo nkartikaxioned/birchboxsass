@@ -48,11 +48,19 @@
     }
 
     .button-banner a {
-
+        
         padding: 20px 45px;
+        border: 1px solid map-get($map: $colors, $key: buttonColor);
         background-color: map-get($map: $colors, $key: buttonColor);
+        transition: .3s;
         @include textTransform($transform :uppercase);
         @include fontSize($size :16px);
         @include fontSize($weight: 600);
+
+        &:hover {
+            border: 1px solid map-get($map: $colors, $key: buttonColor);
+            background-color: transparent;
+            color: map-get($map: $colors, $key: buttonColor);
+        }
     }
 }
