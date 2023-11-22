@@ -1,0 +1,35 @@
+.faviourite-shop-section {
+
+    .wrapper { 
+        text-align: center; 
+        border-bottom: 2px solid map-get($map: $colors, $key: lineColor);
+    }
+
+    &__list {
+        margin: 40px 0 60px;
+        @include flex();
+  
+        li { width: 30%; }
+
+        li:not(:first-child) {
+            margin-left: 3%;
+        }
+    }
+
+    .button--browse {
+        padding: 20px 80px;
+        transition: .3s;
+
+
+        &:hover {
+            background-color: map-get($map: $colors, $key: fontColorGrey);
+            color: map-get($map: $colors, $key: whiteColor);
+        }
+    }
+
+    .box-shop-btn-container { margin-bottom: 50px; }
+
+    figure,img { width: 100%; }
+
+    img { @include image($objFit:cover) }
+}

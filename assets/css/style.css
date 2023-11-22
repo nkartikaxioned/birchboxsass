@@ -475,4 +475,28 @@ li {
   .works-section__works-btn-container {
     margin: 40px 0 80px; }
 
+.faviourite-shop-section .wrapper {
+  text-align: center;
+  border-bottom: 2px solid #F0F0B7; }
+.faviourite-shop-section__list {
+  margin: 40px 0 60px;
+  display: flex; }
+  .faviourite-shop-section__list li {
+    width: 30%; }
+  .faviourite-shop-section__list li:not(:first-child) {
+    margin-left: 3%; }
+.faviourite-shop-section .button--browse {
+  padding: 20px 80px;
+  transition: .3s; }
+  .faviourite-shop-section .button--browse:hover {
+    background-color: #534B48;
+    color: #fff; }
+.faviourite-shop-section .box-shop-btn-container {
+  margin-bottom: 50px; }
+.faviourite-shop-section figure, .faviourite-shop-section img {
+  width: 100%; }
+.faviourite-shop-section img {
+  height: auto;
+  object-fit: cover; }
+
 /*# sourceMappingURL=style.css.map */
