@@ -443,4 +443,36 @@ li {
   .box-section__box-btn-container {
     margin: 70px 0; }
 
+.works-section {
+  margin-bottom: 40px; }
+  .works-section .wrapper {
+    text-align: center;
+    border-bottom: 2px solid #F0F0B7; }
+  .works-section figure, .works-section img {
+    width: 100%; }
+  .works-section img {
+    height: auto;
+    object-fit: cover; }
+  .works-section__list {
+    display: flex; }
+    .works-section__list li {
+      width: 31%; }
+    .works-section__list li:not(:first-child) {
+      margin-left: 4%; }
+  .works-section p {
+    margin: 20px 0 15px;
+    font-size: 16px;
+    font-weight: 300; }
+  .works-section .heading--content {
+    margin-top: 10px;
+    font-size: 25px; }
+  .works-section .button--learnmore {
+    padding: 20px 80px;
+    transition: .3s; }
+    .works-section .button--learnmore:hover {
+      background-color: #534B48;
+      color: #fff; }
+  .works-section__works-btn-container {
+    margin: 40px 0 80px; }
+
 /*# sourceMappingURL=style.css.map */
