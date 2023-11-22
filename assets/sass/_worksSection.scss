@@ -27,12 +27,5 @@
         @include fontSize($size:25px) 
     }
 
-    .button--learnmore {
-        &:hover {
-            background-color: map-get($map: $colors, $key: fontColorGrey);
-            color: map-get($map: $colors, $key: whiteColor);
-        }
-    }
-
     &__works-btn-container { margin: 40px 0 80px; }
 }

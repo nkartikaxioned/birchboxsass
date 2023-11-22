@@ -16,13 +16,5 @@
     p { margin: 40px 0 15px; }
     figcaption { margin-top: 10px; }
 
-    .button--learnmore {
-
-        &:hover {
-            background-color: map-get($map: $colors, $key: fontColorGrey);
-            color: map-get($map: $colors, $key: whiteColor);
-        }
-    }
-
     &__box-btn-container { margin: 70px 0; }
 }

@@ -14,14 +14,6 @@
         li:not(:first-child) { margin-left: 4%; }
      }
 
-    .button--learn-more {
-
-        &:hover {
-            background-color: map-get($map: $colors, $key: fontColorGrey);
-            color: map-get($map: $colors, $key: whiteColor);
-        }
-    }
-
     .box-featured-btn-container { margin-bottom: 80px; }
 
 }

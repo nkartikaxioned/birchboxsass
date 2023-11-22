@@ -15,14 +15,6 @@
         }
     }
 
-    .button--browse {
-
-        &:hover {
-            background-color: map-get($map: $colors, $key: fontColorGrey);
-            color: map-get($map: $colors, $key: whiteColor);
-        }
-    }
-
     .box-shop-btn-container { margin-bottom: 50px; }
 
     figure,img { width: 100%; }

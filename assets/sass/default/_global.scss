@@ -1,38 +1,77 @@
-a,.heading,
-figcaption { @include textTransform($transform: capitalize); }
-.wrapper { 
-    width: 72%; 
-    margin: 0 auto;
+a,
+.heading,
+figcaption {
+  @include textTransform($transform: capitalize);
 }
-.heading,p,a
-,h1,h2,h3
-,h4,h5,span,
-figcaption { color: map-get($map: $colors, $key: fontColorGrey); }
 
-.heading,p { @include fontSize($weight: 600); }
-p { font-size: 18px; }
-.heading { font-size: 32px; }
+.wrapper {
+  width: 72%;
+  margin: 0 auto;
+}
+
+.heading,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+figcaption {
+  color: map-get($map: $colors, $key: fontColorGrey);
+}
+
+.heading,
+p {
+  @include fontSize($weight: 600);
+}
+
+p {
+  font-size: 18px;
+}
+
+.heading {
+  font-size: 32px;
+}
 
 .birchbox a,
-.button { @include textTransform($transform: uppercase); }
-.list { @include flex(); }
+.button {
+  @include textTransform($transform: uppercase);
+}
 
-.button { 
-    padding: 20px 80px;
-    transition: .3s; 
+.list {
+  @include flex();
+}
+
+.button {
+  padding: 20px 80px;
+  transition: .3s;
+
+  &:hover {
+    background-color: map-get($map: $colors, $key: fontColorGrey);
+    color: map-get($map: $colors, $key: whiteColor);
+  }
 }
 
 .header-section,
-.footer-section { background-color: map-get($map: $colors, $key: backgroundColor); }
-
-a{  text-decoration: none; }
-
-.wrapper{ margin: 0 auto; }
-
-li { list-style-type: none; }
-
-.button { 
-    border: 1px solid map-get($map: $colors, $key: fontColorGrey); 
-    color: map-get($map: $colors, $key: fontColorGrey);
+.footer-section {
+  background-color: map-get($map: $colors, $key: backgroundColor);
 }
 
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+.button {
+  border: 1px solid map-get($map: $colors, $key: fontColorGrey);
+  color: map-get($map: $colors, $key: fontColorGrey);
+}
